@@ -5,6 +5,7 @@ class GroundDecorator < BaseDecorator
       indent: h.session[:indent] ||= default(:indent),
       keyboard: h.session[:keyboard] ||= default(:keyboard),
       language: language,
+      code: code,
       shared: id.present?,
       runner_url: Runner.url
     }
@@ -17,7 +18,6 @@ class GroundDecorator < BaseDecorator
       ['⌘ / ctrl', '←', I18n.t('editor.back')],
     ]
   end
-
 
   def selected_label(option)
     editor.option_label(option, data[option])

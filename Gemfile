@@ -48,4 +48,6 @@ gem 'font-awesome-rails', '~> 4.2'
 gem 'foundation-rails', '~> 5.4'
 gem 'socket.io-rails', '~> 1.2'
 
+gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+
 gem 'puma', '~> 2.9'

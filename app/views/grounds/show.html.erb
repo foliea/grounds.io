@@ -19,7 +19,7 @@
 
   </div>
 
-  <%= content_tag(:div, @ground.code, id: :ground_editor, class: 'editor-body', data: @ground.data) %>
+  <%= react_component('CodeEditor', @ground.data) %>
 
 </div>
 
